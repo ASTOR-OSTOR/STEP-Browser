@@ -24,7 +24,6 @@ RUN R -e "install.packages(c('rjson'), repos='https://cloud.r-project.org/')"
 # copy the app to the image
 RUN mkdir /root/app
 COPY app /root/app
-COPY data /root/data
 
 EXPOSE 3838
 
